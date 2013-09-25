@@ -48,9 +48,10 @@ https://jdk8.java.net/download.html
 
 ## References
 
-1. https://blogs.oracle.com/theaquarium/entry/project_avatar_is_open_source
-2. https://avatar-javascript.java.net/
-3. http://docs.strongloop.com/loopback
-4. https://github.com/strongloop/sls-sample-app
+1. http://strongloop.com/strongblog/announcing-loopback-an-open-source-mobile-backend-as-a-service-based-on-node-js/
+2. http://docs.strongloop.com/loopback
+3. https://github.com/strongloop/sls-sample-app
+4. https://blogs.oracle.com/theaquarium/entry/project_avatar_is_open_source
+5. https://avatar-javascript.java.net/
 
 
