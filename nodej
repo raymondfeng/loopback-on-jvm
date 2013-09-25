@@ -1,0 +1,10 @@
+#!/bin/bash
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home
+CD=`pwd`
+ROOT=`dirname $0`
+cd $ROOT
+ROOT=`pwd`
+export DYLD_LIBRARY_PATH=$ROOT/avatar-js/dist 
+cd $CD
+$JAVA_HOME/bin/java -jar $ROOT/avatar-js/dist/avatar-js.jar $@
+
