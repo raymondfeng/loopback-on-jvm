@@ -4,7 +4,12 @@ CD=`pwd`
 ROOT=`dirname $0`
 cd $ROOT
 ROOT=`pwd`
-export DYLD_LIBRARY_PATH=$ROOT/avatar-js/dist 
+OS=`uname -s`
+if [ "Darwin" == "$OS" ]; then
+  export DYLD_LIBRARY_PATH=$ROOT/avatar-js/dist:$DYLD_LIBRARY_PATH
+else
+  export LD_LIBRARY_PATH=$ROOT/avatar-js/dist:$LD_LIBRARY_PATH 
+fi
 cd $CD
 $JAVA_HOME/bin/java -jar $ROOT/avatar-js/dist/avatar-js.jar $@
 
