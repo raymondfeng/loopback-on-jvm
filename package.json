@@ -1,0 +1,26 @@
+{
+  "name": "loopback-on-jvm",
+  "version": "0.0.1",
+  "description": "Run LoopBack on JVM with avatar-js",
+  "scripts": {
+    "checkout": "./checkout.sh",
+    "build": "./build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/raymondfeng/loopback-on-jvm.git"
+  },
+  "keywords": [
+    "LoopBack",
+    "Node",
+    "JVM",
+    "Java",
+    "Avatar-JS",
+    "Mobile"
+  ],
+  "author": "Raymond Feng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raymondfeng/loopback-on-jvm/issues"
+  }
+}
