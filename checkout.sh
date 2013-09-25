@@ -21,7 +21,7 @@ fi
 # Clone or pull from the avatar-js repos
 function sync {
   PROJ=$1
-  echo Syncing $PROJ...
+  echo Checking out $PROJ...
   if [ -d $PROJ/.git ]; then
     cd $ROOT/$PROJ
     git pull
@@ -34,4 +34,13 @@ function sync {
 sync avatar-js
 sync libuv
 sync http-parser
+
+echo 'Checking out strongloop/sls-sample-app...'
+if [ -d sls-sample-app/.git ]; then
+  cd $ROOT/sls-sample-app
+  git pull
+  cd $ROOT
+else
+  git clone git@github.com:strongloop/sls-sample-app.git sls-sample-app
+fi
 
