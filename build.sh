@@ -8,5 +8,5 @@ export CLASSPATH=$ROOT/testng-6.8/testng-6.8.jar
 if [ -d $ROOT/apache-ant-1.9.2/bin ]; then
   export PATH=$ROOT/apache-ant-1.9.2/bin:$PATH
 fi
-ant -Davatar-js.home=$ROOT/avatar-js -Dsource.home=$ROOT/node-v0.10.21 -Dlibuv.home=$ROOT/libuv -Dhttp-parser.home=$ROOT/http-parser -f $ROOT/avatar-js/build.xml
+ant -Davatar-js.home=$ROOT/avatar-js -Dsource.home=$ROOT/node-v0.10.18 -Dlibuv.home=$ROOT/libuv -Dhttp-parser.home=$ROOT/http-parser -f $ROOT/avatar-js/build.xml
 
