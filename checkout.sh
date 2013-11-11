@@ -2,10 +2,10 @@
 ROOT=`dirname $0`
 cd $ROOT
 ROOT=`pwd`
-# Download node v0.10.18
-if [ ! -d node-v0.10.18 ]; then
+# Download node v0.10.21
+if [ ! -d node-v0.10.21 ]; then
   echo 'Downloading node.js...'
-  curl -sL http://nodejs.org/dist/v0.10.18/node-v0.10.18.tar.gz| tar zx
+  curl -sL http://nodejs.org/dist/v0.10.21/node-v0.10.21.tar.gz| tar zx
 fi
 
 if [ ! -d apache-ant-1.9.2 ]; then
@@ -21,19 +21,20 @@ fi
 # Clone or pull from the avatar-js repos
 function sync {
   PROJ=$1
+  TARGET=$2
   echo Checking out $PROJ...
-  if [ -d $PROJ/.git ]; then
-    cd $ROOT/$PROJ
+  if [ -d $TARGET/.git ]; then
+    cd $ROOT/$TARGET
     git pull
   else
-    git clone git://java.net/avatar-js~$PROJ $PROJ
+    git clone git://java.net/avatar-js~$PROJ $TARGET
   fi
   cd $ROOT
 }
 
-sync avatar-js
-sync libuv
-sync http-parser
+sync src avatar-js
+sync libuv-java libuv
+sync http-parser-java http-parser
 
 echo 'Checking out strongloop/sls-sample-app...'
 if [ -d sls-sample-app/.git ]; then

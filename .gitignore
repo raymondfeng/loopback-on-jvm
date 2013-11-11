@@ -1,7 +1,7 @@
 avatar-js/
 libuv/
 http-parser/
-node-v0.10.18/
+node-v0.10.*/
 apache-ant-1.9.2/
 testng-6.8/
 testing-6.8.zip
