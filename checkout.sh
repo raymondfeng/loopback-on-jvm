@@ -2,10 +2,10 @@
 ROOT=`dirname $0`
 cd $ROOT
 ROOT=`pwd`
-# Download node v0.10.18
-if [ ! -d node-v0.10.18 ]; then
+# Download node v0.10.26
+if [ ! -d node-v0.10.26 ]; then
   echo 'Downloading node.js...'
-  curl -sL http://nodejs.org/dist/v0.10.18/node-v0.10.18.tar.gz| tar zx
+  curl -sL http://nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz| tar zx
 fi
 
 if [ ! -d apache-ant-1.9.2 ]; then
