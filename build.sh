@@ -1,6 +1,8 @@
 #!/bin/bash
+if [ -z $JAVA_HOME ]; then
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home
-export PATH=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/bin:$PATH
+fi
+export PATH=$JAVA_HOME/bin:$PATH
 ROOT=`dirname $0`
 cd $ROOT
 ROOT=`pwd`
